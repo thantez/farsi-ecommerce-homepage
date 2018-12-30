@@ -15,17 +15,12 @@
   <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.0.0/css/bootstrap.min.css" integrity="sha384-P4uhUIGk/q1gaD/NdgkBIl3a6QywJjlsFJFk7SPRdruoGddvRVSwv5qFnvZ73cpz"
     crossorigin="anonymous">
 
-  
-
-
-
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="./assets/css/index.css">
 
 </head>
 
 <body>
-
   <!-- Navigation -->
   <header class="page-header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="direction:rtl">
@@ -40,30 +35,78 @@
             <a class="nav-link" href="/">خانه<span class="sr-only">(کنونی)</span></a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="/buy_help.html">راهنمای خرید</a>
-            </li>
+            <a class="nav-link" href="/buy_help.html">راهنمای خرید</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="/about_us.html">درباره ما</a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="/about_us.html">ارتباط با ما</a>
-            </li>
-          <li class="nav-item">
-              <a class="nav-link" href="/etemad.html">چرا و چگونه می‌توانید به ما اعتماد کنید؟</a>
-            </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="دنبال چه محصولی می‌گردید؟" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">بگرد</button>
+            <div class="input-group">
+                <input type="search" class="form-control" placeholder="جستجوی محصولات" aria-label="search_bar" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button">جستجو</button>
+                </div>
+              </div>
         </form>
         <div class="signup-login">
-          <button id="signup" class="btn btn-outline-success my-2 my-sm-0">ثبت نام </button>
-          <button id="login" class="btn btn-outline-success my-2 my-sm-0">ورود</button>
-      </div>
+          <button id="signup" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#signup_model">ثبت نام </button>
+          <button id="login" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#login_model">ورود</button>
+        </div>
       </div>
     </nav>
+    <!-- Modals -->
+  <div class="modal fade" id="login_model" tabindex="-1" role="dialog" aria-labelledby="login_model_Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="login_model_Label">صفحه ورود</h4>
+          </div>
+          <form>
+            <!--php form-->
+            <div class="modal-body">
+              <input class="form-control" type="text" placeholder="نام کاربری" aria-label="username">
+              <input class="form-control" type="password" placeholder="رمز عبور" aria-label="password">
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-outline-success btn-in-box">ورود</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="signup_model" tabindex="-1" role="dialog" aria-labelledby="signup_model_Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="login_model_Label">صفحه ثبت‌نام</h4>
+          </div>
+          <form>
+            <!--php form-->
+            <div class="modal-body">
+              <input class="form-control" type="text" placeholder="نام کاربری انتخابی" aria-label="username">
+              <input class="form-control" type="email" placeholder="پست الکترونیک" aria-label="email">
+              <input class="form-control" type="tel" placeholder="شماره تلفن" aria-label="phone">
+              <input class="form-control" type="text" placeholder="آدرس" aria-label="address">
+              <input class="form-control" type="password" placeholder="رمز عبور انتخابی" aria-label="password">
+              <input class="form-control" type="password" placeholder="تایید رمز عبور" aria-label="password">
+            </div>
+            <div class="modal-footer">
+              <button type="reset" class="btn btn-outline-success btn-in-box">پاک‌کردن</button>
+              <button type="submit" class="btn btn-outline-success btn-in-box">ثبت‌نام</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </header>
-
+  <!--main-->
   <main class="container" style="direction:rtl">
     <div class="row">
       <div class="col-lg-3">
@@ -73,7 +116,7 @@
           <a href="#" class="list-group-item">ابزارآلات دستی</a>
           <a href="#" class="list-group-item">ابزارآلات برقی و شارژی</a>
           <a href="#" class="list-group-item">ابزارآلات بادی</a>
-          <a href="#" class="list-group-item">ابزارآلات مخصوص اندازه‌گیری</a>
+          <a href="#" class="list-group-item">ابزارآلات اندازه‌گیری</a>
           <a href="#" class="list-group-item">تجهیزات ایمنی</a>
           <a href="#" class="list-group-item">یراق‌آلات</a>
           <a href="#" class="list-group-item">لوازم جانبی</a>
@@ -82,14 +125,12 @@
       <!-- /.col-lg-3 -->
 
       <div class="col-lg-9">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide my-4 rounded-carousel"
-          data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide my-4 rounded-carousel" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active carousel-fade">
@@ -100,8 +141,16 @@
                 </div>
                 <img class="d-block img-fluid" src="./assets/images/drill.jpeg" width="900" height="350" alt="دریل">
               </a>
-
             </div>
+            <div class="carousel-item">
+                <a href="#">
+                  <div class="carousel-caption carousel-caption-block">
+                    <h3>تخفیف یلدایی</h3>
+                    <p>۵۰ درصد تخفیف روی تمامی محصولات!</p>
+                  </div>
+                  <img class="d-block img-fluid" src="./assets/images/takhfif.jpeg" alt="عتیقه‌جات">
+                </a>
+              </div>
             <div class="carousel-item">
               <a href="#">
                 <div class="carousel-caption carousel-caption-block">
@@ -133,119 +182,152 @@
       </div>
 
       <!-- main -->
+      <!-- etemad -->
+    </div>
+      <div class="row our-service-block">
+        <div class="col-lg-4 col-md-6 mb-4 our-service-sub-block">
+          <div class="our-service-cell card h-100">
+            <div class="our-service-pic-block">
+              <img class="our-service-pic" src="assets/images/pay_card_icon.png">
+            </div>
+            <div class="our-service-text-block">
+              <p class="our-service-title">پرداخت در محل</p>
+              <p class="our-service-description">هزینه سفارش خود را پس از دریافت در محل پرداخت نمایید</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 our-service-sub-block">
+          <div class="our-service-cell card h-100">
+            <div class="our-service-pic-block">
+              <img class="our-service-pic" src="assets/images/Warranty_icon.png">
+            </div>
+            <div class="our-service-text-block">
+              <p class="our-service-title">ضمانت کیفیت و قیمت</p>
+              <p class="our-service-description">با مهلت برگشت ۷ روزه برای تست محصول و ارزیابی کیفیت آن</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 our-service-sub-block">
+          <div class="our-service-cell card h-100">
+            <div class="our-service-pic-block">
+              <img class="our-service-pic" src="assets/images/truck_icon.png">
+            </div>
+            <div class="our-service-text-block">
+              <p class="our-service-title">ارسال فوری به همه‌ی نقاط کشور</p>
+              <p class="our-service-description">با پست سریع و کارامد جمهوری اسلامی ایران، تحویل درب منزل</p>
+            </div>
+          </div>
+        </div>
       <div class="container title-bar">
-          <h3>پیشنهاد ویژه</h3>
-          <a href="#!" class="clear-link"><div class="yalda-banner"><div class="animate">yalda-banner</div></div></a>
+        <h3>محصولات برتر</h3>
       </div>
-      <div class="container title-bar">
-          <h3>محصولات برتر</h3>
-      </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-            
-          <div class="card h-100">
-            <a href="#">
-              <img class="card-img-top img-bottom-border" src="./assets/images/chakosh.jpeg" alt="آچار فرانسه با کیفیت بالا">
-            </a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">چکش دسته سیاه</a>
-              </h4>
-              <h6 style="text-align:left">۳۵۵۰۰ ﷼</h5>
+      <div class="col-lg-4 col-md-6 mb-4">
+
+        <div class="card h-100">
+          <a href="#">
+            <img class="card-img-top img-bottom-border" src="./assets/images/chakosh.jpeg" alt="آچار فرانسه با کیفیت بالا">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">چکش دسته سیاه</a>
+            </h4>
+            <h6 style="text-align:left">۳۵۵۰۰ ﷼</h5>
               <p class="card-text">چکشی فلزی با دسته پلاستیکی به رنگ سیاه و با جنس فلزی در مغزی آن</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
-              <button id="buy" class="btn btn-outline-success my-2 my-sm-0 buy-button">خرید</button>
-            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
+            <button id="buy" class="btn btn-outline-success my-2 my-sm-0 buy-button">خرید</button>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top img-bottom-border" src="./assets/images/mikh.jpeg" alt="میخ پر قدرت"></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">میخ آهنی</a>
-              </h4>
-              <h6 style="text-align:left">۵۰۰۰ ﷼</h5>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top img-bottom-border" src="./assets/images/mikh.jpeg" alt="میخ پر قدرت"></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">میخ آهنی</a>
+            </h4>
+            <h6 style="text-align:left">۵۰۰۰ ﷼</h5>
               <p class="card-text">میخ اهنی براق با استحکام بالا که قادر است در هر سطحی نفوذ کند.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9734; &#9734; &#9734;</small>
-              <button id="buy" class="btn btn-outline-success my-2 my-sm-0 buy-button">خرید</button>
-            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">&#9733; &#9733; &#9734; &#9734; &#9734;</small>
+            <button id="buy" class="btn btn-outline-success my-2 my-sm-0 buy-button">خرید</button>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top img-bottom-border" src="./assets/images/anbor_dasti.jpeg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">انبردست زیبا</a>
-              </h4>
-              <h6 style="text-align:left">۵۷۹۰۰ ﷼</h5>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top img-bottom-border" src="./assets/images/anbor_dasti.jpeg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">انبردست زیبا</a>
+            </h4>
+            <h6 style="text-align:left">۵۷۹۰۰ ﷼</h5>
               <p class="card-text">انبردستی قدرتمند که قادر است تمام نیازهای شما را رفع کند، این انبردست همچنین از ظاهر
                 زیبایی نیز برخوردار است.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              <button id="buy" class="btn btn-outline-success my-2 my-sm-0 buy-button">خرید</button>
-            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            <button id="buy" class="btn btn-outline-success my-2 my-sm-0 buy-button">خرید</button>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top img-bottom-border" src="./assets/images/pich.jpeg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">پیچ فلزی</a>
-              </h4>
-              <h6 style="text-align:left">۶۵۰۰ ﷼</h5>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top img-bottom-border" src="./assets/images/pich.jpeg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">پیچ فلزی</a>
+            </h4>
+            <h6 style="text-align:left">۶۵۰۰ ﷼</h5>
               <p class="card-text">پیچ فلزی مخصوص ورود به انواع سطوح با کیفیت بالا</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9734; &#9734; &#9734; &#9734;</small>
-              <button id="buy" class="btn btn-outline-success my-2 my-sm-0 buy-button">خرید</button>
-            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">&#9733; &#9734; &#9734; &#9734; &#9734;</small>
+            <button id="buy" class="btn btn-outline-success my-2 my-sm-0 buy-button">خرید</button>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top img-bottom-border" src="./assets/images/parch_small.jpeg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">میخ پرچ</a>
-              </h4>
-              <h6 style="text-align:left">۳۰۵۰۰ ﷼</h5>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top img-bottom-border" src="./assets/images/parch_small.jpeg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">میخ پرچ</a>
+            </h4>
+            <h6 style="text-align:left">۳۰۵۰۰ ﷼</h5>
               <p class="card-text">این میخ مخصوص پرچ کردن است و کیفیت بالایی دارد. شما میتوانید دستگاه پرچ را نیز از
                 همین سایت خریداری نمایید.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              <button id="buy" class="btn btn-outline-success my-2 my-sm-0 buy-button">خرید</button>
-            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            <button id="buy" class="btn btn-outline-success my-2 my-sm-0 buy-button">خرید</button>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top img-bottom-border" src="./assets/images/shalaghi.jpeg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">آچار شلاقی</a>
-              </h4>
-              <h6 style="text-align:left">۴۵۶۰۰۰ ﷼</h5>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top img-bottom-border" src="./assets/images/shalaghi.jpeg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">آچار شلاقی</a>
+            </h4>
+            <h6 style="text-align:left">۴۵۶۰۰۰ ﷼</h5>
               <p class="card-text">آچار شلاقی قرمز که کیفیت خوبی دارد و شما را در کارهای فنیتان یاری میدهد.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9734; &#9734; &#9734;</small>
-              <button id="buy" class="btn btn-outline-success my-2 my-sm-0 buy-button">خرید</button>
-            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">&#9733; &#9733; &#9734; &#9734; &#9734;</small>
+            <button id="buy" class="btn btn-outline-success my-2 my-sm-0 buy-button">خرید</button>
           </div>
         </div>
+      </div>
+      </div>
       <!-- /.row -->
 
     </div>
@@ -260,7 +342,7 @@
     </div>
 
     <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=51.36869072914124%2C35.712471229803874%2C51.37577176094056%2C35.71649141554597&amp;layer=mapnik&amp;marker=35.714481348025146%2C51.372231245040894"
-                style="vertical-align: middle; border-top: 1px solid #343a40;"></iframe>
+      style="vertical-align: middle; border-top: 1px solid #343a40;"></iframe>
   </section>
 
   <!-- Footer -->
@@ -322,16 +404,16 @@
           <ul class="list-unstyled">
             <li>
               <p class="ltr-format">
-                  <a href="mailto:info@/">info@/</a>
+                <a href="mailto:info@/">info@/</a>
               </p>
             </li>
             <li>
               <p class="ltr-format">
-                  <a href="tel:+982199663322">021 99663322</a>
+                <a href="tel:+982199663322">021 99663322</a>
             </li>
             <li>
               <p class="ltr-format">
-                  <a href="tel:+982154225044">021 54225044</a>
+                <a href="tel:+982154225044">021 54225044</a>
             </li>
           </ul>
 
@@ -344,7 +426,7 @@
         <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
 
           <!-- Social buttons -->
-          <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+          <h5 class="font-weight-bold text-uppercase mb-4">ما را دنبال کنید</h5>
 
           <a href="#!" class="clear-link">
             <img src="./assets/images/facebook.svg">
