@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ابزار آنلاین</title>
+    <link rel="shortcut icon" type="image/png" href="./assets/images/favico.png">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.0.0/css/bootstrap.min.css" integrity="sha384-P4uhUIGk/q1gaD/NdgkBIl3a6QywJjlsFJFk7SPRdruoGddvRVSwv5qFnvZ73cpz"
+        crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="page-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="direction:rtl">
+            <a class="navbar-brand" href="/"><img src="./assets/images/logo.png" width="150" height="42" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="direction:rtl">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">خانه<span class="sr-only">(کنونی)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/buy_help.html">راهنمای خرید</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about_us.html">درباره ما</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="جستجوی محصولات" aria-label="search_bar"
+                            aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">جستجو</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="signup-login">
+                    <button id="signup" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#signup_model">ثبت
+                        نام </button>
+                    <button id="login" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#login_model">ورود</button>
+                </div>
+            </div>
+        </nav>
+        <!-- Modals -->
+        <div class="modal fade" id="login_model" tabindex="-1" role="dialog" aria-labelledby="login_model_Label"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="login_model_Label">صفحه ورود</h4>
+                    </div>
+                    <form>
+                        <!--php form-->
+                        <div class="modal-body">
+                            <input class="form-control" type="text" placeholder="نام کاربری" aria-label="username">
+                            <input class="form-control" type="password" placeholder="رمز عبور" aria-label="password">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-outline-success btn-in-box">ورود</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="signup_model" tabindex="-1" role="dialog" aria-labelledby="signup_model_Label"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="login_model_Label">صفحه ثبت‌نام</h4>
+                    </div>
+                    <form>
+                        <!--php form-->
+                        <div class="modal-body">
+                            <input class="form-control" type="text" placeholder="نام کاربری انتخابی" aria-label="username">
+                            <input class="form-control" type="email" placeholder="پست الکترونیک" aria-label="email">
+                            <input class="form-control" type="tel" placeholder="شماره تلفن" aria-label="phone">
+                            <input class="form-control" type="text" placeholder="آدرس" aria-label="address">
+                            <input class="form-control" type="password" placeholder="رمز عبور انتخابی" aria-label="password">
+                            <input class="form-control" type="password" placeholder="تایید رمز عبور" aria-label="password">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="reset" class="btn btn-outline-success btn-in-box">پاک‌کردن</button>
+                            <button type="submit" class="btn btn-outline-success btn-in-box">ثبت‌نام</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--main-->
+    <main class="container" style="direction:rtl">
+        <div class="row">
+            <img src="./assets/images/pich.jpeg" width="100%" height="70%">
+            <!-- /.col-lg-3 -->
+            <div class="container">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="explanation-tab" data-toggle="tab" href="#explanation" role="tab"
+                            aria-controls="explanation" aria-selected="true">شرح کالا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="details-tab" data-toggle="tab" href="#details" role="tab" aria-controls="details"
+                            aria-selected="false">جزئیات کالا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="comments-tab" data-toggle="tab" href="#comments" role="tab"
+                            aria-controls="comments" aria-selected="false">نظرات کاربران</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" id="comments-tab" data-toggle="tab" role="tab" aria-controls="comments"
+                            aria-selected="false">۶۵۰۰ ﷼</a>
+                    </li>
+
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="explanation" role="tabpanel" aria-labelledby="explanation-tab">
+                        <div class="paddinger">
+                            <h4>پیچ فلزی</h4>
+                            <p>پیچ فلزی ، استوانه ای رزوه شده می باشد که نوک رزوه آن تیز می باشد و در قطعه و محل مورد
+                                نظر
+                                فرو میرود و برای سفت شدن نیازی به مهره ندارد و گل پیچ آن معمولا دو سو می باشد و بخشی از
+                                ساقه آن بدون رزوه می باشد.</p>
+                            <p>جنس این پیچ از معمولا از آهن یا استنلس استیل در دو گرید استیل 304 و 316 می باشد که تولید
+                                و
+                                مورد استفاده قرار میگیرد.</p>
+                            <p>برای تولید و به کارگیری پیچ فلزی استانداردهای مختلفی نظیر astm یا din یا iso وجود دارد
+                                یکی
+                                از پرکاربردترین استانداردها برای پيچ فلزی din 97 می باشد.</p>
+                            <p>فروشگاه اینترنتی ابزار آنلاین عرضه کننده و توزیع کننده انواع پیچ فلزی در سایزهای مختلف
+                                می
+                                باشد.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="details" role="tabpanel" aria-labelledby="details-tab">
+                        <table class="table table-hover">
+                            <thead>
+                                <th>
+                                    جزئیات فنی
+                                </th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        جنس
+                                    </td>
+                                    <td>
+                                        استیل
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        کیفیت
+                                    </td>
+                                    <td>
+                                        عالی
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        کاربرد
+                                    </td>
+                                    <td>
+                                        چوب، سطوح نرم
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        گواهی کیفیت
+                                    </td>
+                                    <td>
+                                        din 97
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        فروش به صورت
+                                    </td>
+                                    <td>
+                                        تکی
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane" id="comments" role="tabpanel" aria-labelledby="comments-tab">
+                        <div class="paddinger">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                    <div class="card">
+                                            <div class="card-body">
+                                                <img src="./assets/images/avatar.png" width="100px" height="100px">
+                                                <span class="badge badge-info">خریدار</span>
+                                              <p>من این محصول را خریدم و از آن راضی بودم</p>
+                                            </div>
+                                          </div>
+                            </li>
+                            <li class="list-group-item">
+                                    <div class="card">
+                                            <div class="card-body">
+                                                <img src="./assets/images/avatar.png" width="100px" height="100px">
+                                              <p>جنس کالا افتضاح بود و من حتی نتوانستم از آن در دیوار خانه‌مان استفاده کنم.</br> مفت خودتان</p>
+                                            </div>
+                                          </div>
+                            </li>
+                            <li class="list-group-item">
+                                    <form>
+                                            <!--php form-->
+                                            <div>
+                                                    <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                              <div class="input-group-text">
+                                                                <p> قبلا محصول را خریده بودید؟</p>
+                                                                <input class="buy-checkbox" type="checkbox" aria-label="Checkbox for following text input">
+                                                              </div>
+                                                            </div>
+                                                            <input class="form-control comment-username" type="text" placeholder="نام کاربری" aria-label="username">
+                                                          </div>
+                                                
+                                                <input class="form-control" type="email" placeholder="پست الکترونیک" aria-label="email">
+                                                <textarea rows="4" cols="50" class="form-control" placeholder="نظر شما" aria-label="comment"></textarea>
+                                                <button type="submit" class="btn btn-outline-success btn-in-box">ارسال</button>
+                                                <button type="reset" class="btn btn-outline-success btn-in-box">پاک‌کردن</button>
+                                                
+                                            </div>
+                                        </form>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+    </main>
+
+    <section>
+        <div class="location">
+            <h3>نشانی</h3>
+            <p>تهران، خیابان ستارخان، خیابان پاتریس لومومبا، کوچه اکبرزاده، ساختمان خرزوخان، واحد دوم</p>
+        </div>
+
+        <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=51.36869072914124%2C35.712471229803874%2C51.37577176094056%2C35.71649141554597&amp;layer=mapnik&amp;marker=35.714481348025146%2C51.372231245040894"
+            style="vertical-align: middle; border-top: 1px solid #343a40;"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4 py-5 bg-dark text-white" style="direction:rtl">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-white text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+                    <!-- Content -->
+                    <h5 class="font-weight-bold mb-4">نماد اعتماد</h5>
+                    <img src="./assets/images/enamad.png">
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold  mb-4">درباره‌</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                <a href="#!">درباره‌ی ما</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#!">وبلاگ</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#!">جوایز</a>
+                            </p>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                    <!-- Contact details -->
+                    <h5 class="font-weight-bold mb-4">راه‌های ارتباطی</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p class="ltr-format">
+                                <a href="mailto:info@/">info@/</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="ltr-format">
+                                <a href="tel:+982199663322">021 99663322</a>
+                        </li>
+                        <li>
+                            <p class="ltr-format">
+                                <a href="tel:+982154225044">021 54225044</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+                    <!-- Social buttons -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">ما را دنبال کنید</h5>
+
+                    <a href="#!" class="clear-link">
+                        <img src="./assets/images/facebook.svg">
+                    </a>
+                    <a href="#!" class="clear-link">
+                        <img src="./assets/images/twitter.svg">
+                    </a>
+                    <a href="#!" class="clear-link">
+                        <img src="./assets/images/rss.svg">
+                    </a>
+                    <a href="#!" class="clear-link">
+                        <img src="./assets/images/instagram.svg">
+                    </a>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 ساخته شده با عشق، توسط:
+            <a href="/">abzar online</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.0.0/js/bootstrap.min.js" integrity="sha384-54+cucJ4QbVb99v8dcttx/0JRx4FHMmhOWi4W+xrXpKcsKQodCBwAvu3xxkZAwsH"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
