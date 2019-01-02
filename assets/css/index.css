@@ -26,8 +26,8 @@ a {
   }
   
   a:hover {
-    color: rgb(65, 13, 28);;
-    text-decoration: underline;
+    color: rgb(65, 13, 28);
+    text-decoration: none;
   }
   
   a:not([href]):not([tabindex]) {
@@ -227,11 +227,8 @@ h6{
   margin-right: auto;
 }
 
-.our-service-block{
-  direction: rtl;
-}
-
 .our-service-cell{
+  direction: rtl;
   display: flex;
   width: 100%;
   padding: 2% 5%;
@@ -261,7 +258,7 @@ h6{
 
 .our-service-title{
   font-size: 0.9rem;
-  margin: 0 0 8px 0;
+  margin: 0 0 6px 0;
 }
 .our-service-description{
   font-size: 0.8rem;
