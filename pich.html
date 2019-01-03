@@ -113,7 +113,17 @@
     <!--main-->
     <main class="container" style="direction:rtl">
         <div class="row">
-            <img src="./assets/images/pich.jpeg" width="100%" height="70%">
+            <div class="container">
+                <div class="product-body">
+                    <img src="./assets/images/pich.jpeg" width="100%" height="90%">
+                    <h2>
+                        پیچ فلزی
+                    </h2>
+                    <h4>
+                        ۶۵۰۰ ﷼
+                    </h4>
+                </div>
+            </div>
             <!-- /.col-lg-3 -->
             <div class="container">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -129,18 +139,13 @@
                         <a class="nav-link" id="comments-tab" data-toggle="tab" href="#comments" role="tab"
                             aria-controls="comments" aria-selected="false">نظرات کاربران</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" id="comments-tab" data-toggle="tab" role="tab" aria-controls="comments"
-                            aria-selected="false">۶۵۰۰ ﷼</a>
-                    </li>
-
                 </ul>
 
                 <!-- Tab panes -->
                 <div class="tab-content">
                     <div class="tab-pane active" id="explanation" role="tabpanel" aria-labelledby="explanation-tab">
                         <div class="paddinger">
-                            <h4>پیچ فلزی</h4>
+                            <h4>بهترین پیچ در خاورمیانه</h4>
                             <p>پیچ فلزی ، استوانه ای رزوه شده می باشد که نوک رزوه آن تیز می باشد و در قطعه و محل مورد
                                 نظر
                                 فرو میرود و برای سفت شدن نیازی به مهره ندارد و گل پیچ آن معمولا دو سو می باشد و بخشی از
@@ -209,48 +214,52 @@
                         </table>
                     </div>
                     <div class="tab-pane" id="comments" role="tabpanel" aria-labelledby="comments-tab">
-                        <div class="paddinger">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
+                        <div class="comments-class">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
                                     <div class="card">
-                                            <div class="card-body">
-                                                <img src="./assets/images/avatar.png" width="100px" height="100px">
-                                                <span class="badge badge-info">خریدار</span>
-                                              <p>من این محصول را خریدم و از آن راضی بودم</p>
-                                            </div>
-                                          </div>
-                            </li>
-                            <li class="list-group-item">
+                                        <div class="card-body">
+                                            <img src="./assets/images/avatar.png" width="100px" height="100px">
+                                            <span class="badge badge-info">خریدار</span>
+                                            <p>من این محصول را خریدم و از آن راضی بودم</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
                                     <div class="card">
-                                            <div class="card-body">
-                                                <img src="./assets/images/avatar.png" width="100px" height="100px">
-                                              <p>جنس کالا افتضاح بود و من حتی نتوانستم از آن در دیوار خانه‌مان استفاده کنم.</br> مفت خودتان</p>
-                                            </div>
-                                          </div>
-                            </li>
-                            <li class="list-group-item">
+                                        <div class="card-body">
+                                            <img src="./assets/images/avatar.png">
+                                            <p>جنس کالا افتضاح بود و من حتی نتوانستم از آن در دیوار خانه‌مان استفاده
+                                                کنم.</br> مفت خودتان</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
                                     <form>
-                                            <!--php form-->
-                                            <div>
-                                                    <div class="input-group">
-                                                            <div class="input-group-prepend">
-                                                              <div class="input-group-text">
-                                                                <p> قبلا محصول را خریده بودید؟</p>
-                                                                <input class="buy-checkbox" type="checkbox" aria-label="Checkbox for following text input">
-                                                              </div>
-                                                            </div>
-                                                            <input class="form-control comment-username" type="text" placeholder="نام کاربری" aria-label="username">
-                                                          </div>
-                                                
-                                                <input class="form-control" type="email" placeholder="پست الکترونیک" aria-label="email">
-                                                <textarea rows="4" cols="50" class="form-control" placeholder="نظر شما" aria-label="comment"></textarea>
-                                                <button type="submit" class="btn btn-outline-success btn-in-box">ارسال</button>
-                                                <button type="reset" class="btn btn-outline-success btn-in-box">پاک‌کردن</button>
-                                                
+                                        <!--php form-->
+                                        <div>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">
+                                                        <p> قبلا محصول را خریده‌ام!</p>
+                                                        <input class="buy-checkbox" type="checkbox" aria-label="Checkbox for following text input">
+                                                    </div>
+                                                </div>
+                                                <input class="form-control comment-username" type="text" placeholder="نام کاربری"
+                                                    aria-label="username">
                                             </div>
-                                        </form>
-                            </li>
-                        </ul>
+
+                                            <input class="form-control" type="email" placeholder="پست الکترونیک"
+                                                aria-label="email">
+                                            <textarea rows="4" cols="50" class="form-control" placeholder="نظر شما"
+                                                aria-label="comment"></textarea>
+                                            <button type="submit" class="btn btn-outline-success btn-in-box">ارسال</button>
+                                            <button type="reset" class="btn btn-outline-success btn-in-box">پاک‌کردن</button>
+
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
