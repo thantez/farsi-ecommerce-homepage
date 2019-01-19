@@ -24,7 +24,7 @@
   <!-- Navigation -->
   <header class="page-header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="direction:rtl">
-      <a class="navbar-brand" href="/"><img src="./assets/images/logo.png" width="150" height="42" alt=""></a>
+      <a class="navbar-brand" href="/"><img src="./assets/images/logo.png" class="logo-pic" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -41,6 +41,9 @@
             <a class="nav-link" href="/about_us.html">درباره ما</a>
           </li>
         </ul>
+        <div>
+          <p class="wellcome">خوش اومدی<a href="/">علی</a>جان!</p>
+        </div>
         <form class="form-inline my-2 my-lg-0">
             <div class="input-group">
                 <input type="search" class="form-control" placeholder="جستجوی محصولات" aria-label="search_bar" aria-describedby="basic-addon2">
@@ -50,8 +53,9 @@
               </div>
         </form>
         <div class="signup-login">
-          <button id="signup" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#signup_model">ثبت نام </button>
+          <button id="signup" class="btn btn-outline-primary my-2 my-sm-0" data-toggle="modal" data-target="#signup_model">ثبت نام</button>
           <button id="login" class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#login_model">ورود</button>
+          <button id="signup" class="btn btn-outline-dark my-2 my-sm-0">خروج</button>
         </div>
       </div>
     </nav>
@@ -72,6 +76,7 @@
               <input class="form-control" type="password" placeholder="رمز عبور" aria-label="password">
             </div>
             <div class="modal-footer">
+              <p class="wrong-login">اطلاعات وارد شده صحیح نیست</p>
               <button type="submit" class="btn btn-outline-success btn-in-box">ورود</button>
             </div>
           </form>
@@ -98,6 +103,7 @@
               <input class="form-control" type="password" placeholder="تایید رمز عبور" aria-label="password">
             </div>
             <div class="modal-footer">
+              <p class="wrong-sign">اطلاعات وارد شده صحیح نیست</p>
               <button type="reset" class="btn btn-outline-success btn-in-box">پاک‌کردن</button>
               <button type="submit" class="btn btn-outline-success btn-in-box">ثبت‌نام</button>
             </div>

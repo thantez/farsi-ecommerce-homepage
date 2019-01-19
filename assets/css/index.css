@@ -428,3 +428,24 @@ textarea {
   direction: ltr;
   text-align: left;
 }
+
+.wellcome{
+  margin: auto 0 auto 10px;
+  color: rgb(19, 1, 5);
+}
+
+.wellcome a{
+  color: rgb(19, 1, 5);
+  font-weight: 600;
+  margin: 0 0.2rem;
+}
+
+.wrong-sign, .wrong-login{
+  margin: auto auto auto 0;
+  color: rgb(150, 12, 12);
+}
+
+.logo-pic{
+  width: auto;
+  height: 2em;
+}
